@@ -3,7 +3,7 @@ import {skills, softskill} from '../components/data.js'
 import { BsCheck2All } from 'react-icons/bs'
 function Skills() {
   return (
-    <div className='w-full flex flex-col py-20'>
+    <div className='w-full flex flex-col pb-10'>
       <h4 className='text-3xl font-bold text-black dark:text-white mb-10 text-center'>
         Technical Skills
       </h4>

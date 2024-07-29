@@ -4,21 +4,23 @@ import { MdOutlineNightlight } from 'react-icons/md';
 import { BiMenu } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 function Navbar({darkMode,isOpen,toggleMenu,toggleTheme}) {
-  // console.log(darkMode);
+  
   return (
     <div className='px-0 2xl:px-40'>
       <div className='w-full items-center justify-between py-4 px-10'>
       <div className='flex items-center justify-between w-full'>
-        <a href='/' className='text-2xl font-bold text-blue-500 cursor-pointer'>Manishka Gupta</a>
+      <a href='/' className='text-2xl font-extrabold text-slate-800 dark:text-white cursor-pointer font-dancing'>
+            Manishka Gupta
+          </a>
         <ul className='hidden md:flex gap-10 text-lg text-slate-800 dark:text-gray-200'>
           <li className='cursor-pointer hover:text-blue-500'>
             <a href='#home'> Home </a>
           </li>
           <li className='cursor-pointer hover:text-blue-500'>
-            <a href='#home'> About </a>
+            <a href='#about'> About </a>
           </li>
           <li className='cursor-pointer hover:text-blue-500'>
-            <a href='#home'> Projects </a>
+            <a href='#projects'> Projects </a>
           </li>
           
         </ul>
@@ -54,7 +56,7 @@ function Navbar({darkMode,isOpen,toggleMenu,toggleTheme}) {
           <a href="#about" onClick={toggleMenu} className='cursor-pointer'>
             About
           </a>
-          <a href="#project" onClick={toggleMenu} className='cursor-pointer'>
+          <a href="#projects" onClick={toggleMenu} className='cursor-pointer'>
             Projects
           </a>
           
